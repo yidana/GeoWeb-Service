@@ -1,0 +1,4 @@
+D:\Final Year Project work\App_pilot\GeoWebService\GeoWebService\obj\Debug\GeoWebService.pyproj.CoreCompileInputs.cache
+D:\My Stuff\Python\Django\Final Year Project\GeoWebService\obj\Debug\GeoWebService.pyproj.CoreCompileInputs.cache
+E:\My Stuff\Python\Django\Final Year Project\GeoWebService\obj\Debug\GeoWebService.pyproj.CoreCompileInputs.cache
+E:\My Stuff\Project Work Test\GeoWebService\obj\Debug\GeoWebService.pyproj.CoreCompileInputs.cache

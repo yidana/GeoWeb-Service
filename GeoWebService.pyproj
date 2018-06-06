@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>GeoWebService</Name>
+    <RootNamespace>GeoWebService</RootNamespace>
+    <InterpreterId>MSBuild|env2|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>1cef5178-dd74-4f3d-94ca-8aed4dd7f2ca</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>GeoWebService.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app\admin.py" />
+    <Compile Include="app\forms.py" />
+    <Compile Include="app\Geowebservice_app\admin.py" />
+    <Compile Include="app\Geowebservice_app\apps.py" />
+    <Compile Include="app\Geowebservice_app\migrations\__init__.py" />
+    <Compile Include="app\Geowebservice_app\models.py" />
+    <Compile Include="app\Geowebservice_app\tests.py" />
+    <Compile Include="app\Geowebservice_app\views.py" />
+    <Compile Include="app\Geowebservice_app\__init__.py" />
+    <Compile Include="app\models.py" />
+    <Compile Include="app\tests.py" />
+    <Compile Include="app\views.py" />
+    <Compile Include="app\__init__.py" />
+    <Compile Include="app\migrations\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="GeoWebService\__init__.py" />
+    <Compile Include="GeoWebService\settings.py" />
+    <Compile Include="GeoWebService\urls.py" />
+    <Compile Include="GeoWebService\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\" />
+    <Folder Include="app\Geowebservice_app\" />
+    <Folder Include="app\Geowebservice_app\migrations\" />
+    <Folder Include="app\Geowebservice_app\templates\" />
+    <Folder Include="app\migrations\" />
+    <Folder Include="app\static\" />
+    <Folder Include="app\static\app\" />
+    <Folder Include="app\static\app\content\" />
+    <Folder Include="app\static\app\fonts\" />
+    <Folder Include="app\static\app\images\" />
+    <Folder Include="app\static\app\Data\" />
+    <Folder Include="app\static\app\csv\" />
+    <Folder Include="app\static\app\scripts\" />
+    <Folder Include="app\templates\" />
+    <Folder Include="app\templates\app\" />
+    <Folder Include="GeoWebService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\Geowebservice_app\templates\index.html" />
+    <Content Include="app\static\app\content\bootstrap-combobox.css" />
+    <Content Include="app\static\app\content\datatables.min.css" />
+    <Content Include="app\static\app\content\flexslider.css" />
+    <Content Include="app\static\app\content\font-awesome.css" />
+    <Content Include="app\static\app\content\jquery-ui.css" />
+    <Content Include="app\static\app\content\jquery-ui.structure.css" />
+    <Content Include="app\static\app\content\jquery-ui.theme.css" />
+    <Content Include="app\static\app\content\leaflet-search.css" />
+    <Content Include="app\static\app\content\leaflet-search.mobile.css" />
+    <Content Include="app\static\app\content\leaflet.css" />
+    <Content Include="app\static\app\content\legendStyle.css" />
+    <Content Include="app\static\app\content\lightbox.css" />
+    <Content Include="app\static\app\content\paneltabstyles.css" />
+    <Content Include="app\static\app\content\side_controls_style.css" />
+    <Content Include="app\static\app\content\style.css" />
+    <Content Include="app\static\app\content\style_dropdowns.css" />
+    <Content Include="app\static\app\csv\AGE_REGION.csv" />
+    <Content Include="app\static\app\csv\District_Population.csv" />
+    <Content Include="app\static\app\csv\ETHNICITY_REGION.csv" />
+    <Content Include="app\static\app\csv\NATIONALITY_REGION.csv" />
+    <Content Include="app\static\app\csv\population_by_age_group.csv" />
+    <Content Include="app\static\app\csv\Population_by_religious_affiliation.csv" />
+    <Content Include="app\static\app\csv\POPULATION_REGION.csv" />
+    <Content Include="app\static\app\Data\Districts_Layer_1.js" />
+    <Content Include="app\static\app\Data\district_population_by_age_group_final.js" />
+    <Content Include="app\static\app\Data\Regional_population_by_nationality_final.js" />
+    <Content Include="app\static\app\Data\Regional_population_ethnicity_final.js" />
+    <Content Include="app\static\app\Data\Regional_population_final.js" />
+    <Content Include="app\static\app\Data\Regional_population_religious_belief_final.js" />
+    <Content Include="app\static\app\fonts\fontawesome-webfont.eot" />
+    <Content Include="app\static\app\fonts\fontawesome-webfont.svg" />
+    <Content Include="app\static\app\fonts\fontawesome-webfont.ttf" />
+    <Content Include="app\static\app\fonts\fontawesome-webfont.woff" />
+    <Content Include="app\static\app\fonts\fontawesome-webfont.woff2" />
+    <Content Include="app\static\app\fonts\FontAwesome.otf" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="app\static\app\images\1.jpg" />
+    <Content Include="app\static\app\images\10.jpg" />
+    <Content Include="app\static\app\images\11.jpg" />
+    <Content Include="app\static\app\images\12.jpg" />
+    <Content Include="app\static\app\images\13.jpg" />
+    <Content Include="app\static\app\images\3.jpg" />
+    <Content Include="app\static\app\images\4.jpg" />
+    <Content Include="app\static\app\images\5.jpg" />
+    <Content Include="app\static\app\images\6.jpg" />
+    <Content Include="app\static\app\images\7.jpg" />
+    <Content Include="app\static\app\images\8.jpg" />
+    <Content Include="app\static\app\images\9.jpg" />
+    <Content Include="app\static\app\images\arrow.png" />
+    <Content Include="app\static\app\images\back.png" />
+    <Content Include="app\static\app\images\close.png" />
+    <Content Include="app\static\app\images\g1.jpg" />
+    <Content Include="app\static\app\images\g2.jpg" />
+    <Content Include="app\static\app\images\g3.jpg" />
+    <Content Include="app\static\app\images\g4.jpg" />
+    <Content Include="app\static\app\images\g5.jpg" />
+    <Content Include="app\static\app\images\g6.jpg" />
+    <Content Include="app\static\app\images\g7.jpg" />
+    <Content Include="app\static\app\images\leaflet-search.jpg" />
+    <Content Include="app\static\app\images\loader.gif" />
+    <Content Include="app\static\app\images\next.png" />
+    <Content Include="app\static\app\images\prev.png" />
+    <Content Include="app\static\app\images\s1.jpg" />
+    <Content Include="app\static\app\images\search-icon-mobile.png" />
+    <Content Include="app\static\app\images\search-icon.png" />
+    <Content Include="app\static\app\images\t1.jpg" />
+    <Content Include="app\static\app\images\t2.jpg" />
+    <Content Include="app\static\app\images\t3.jpg" />
+    <Content Include="app\static\app\images\t4.jpg" />
+    <Content Include="app\static\app\scripts\active scripts.js" />
+    <Content Include="app\static\app\scripts\bootstrap-combobox.js" />
+    <Content Include="app\static\app\scripts\choropleth.js" />
+    <Content Include="app\static\app\scripts\d3.js" />
+    <Content Include="app\static\app\scripts\d3.min.js" />
+    <Content Include="app\static\app\scripts\datatables.min.js" />
+    <Content Include="app\static\app\scripts\displayDistrictAgroupColumns.js" />
+    <Content Include="app\static\app\scripts\displayRegionalAgegroupColumns.js" />
+    <Content Include="app\static\app\scripts\displayRegionalColumns.js" />
+    <Content Include="app\static\app\scripts\displayRegionalEthnicityColumns.js" />
+    <Content Include="app\static\app\scripts\displayRegionalNationalityColumns.js" />
+    <Content Include="app\static\app\scripts\displayRegionalRelAffiliationColumns.js" />
+    <Content Include="app\static\app\scripts\displayTables.js" />
+    <Content Include="app\static\app\scripts\districtTable.js" />
+    <Content Include="app\static\app\scripts\district_by_agegroup.js" />
+    <Content Include="app\static\app\scripts\dynamically_display_regionalData.js" />
+    <Content Include="app\static\app\scripts\dynamic_map_display.js" />
+    <Content Include="app\static\app\scripts\easing.js" />
+    <Content Include="app\static\app\scripts\jarallax.js" />
+    <Content Include="app\static\app\scripts\jquery-1.11.1.min.js" />
+    <Content Include="app\static\app\scripts\jquery-3.2.1.min.js" />
+    <Content Include="app\static\app\scripts\jquery-ui.js" />
+    <Content Include="app\static\app\scripts\jquery-ui.min.js" />
+    <Content Include="app\static\app\scripts\jquery.flexslider.js" />
+    <Content Include="app\static\app\scripts\leaflet-search-geocoder.js" />
+    <Content Include="app\static\app\scripts\leaflet-search.js" />
+    <Content Include="app\static\app\scripts\leaflet-src.js" />
+    <Content Include="app\static\app\scripts\leaflet.js" />
+    <Content Include="app\static\app\scripts\lightbox-plus-jquery.min.js" />
+    <Content Include="app\static\app\scripts\load_map.js" />
+    <Content Include="app\static\app\scripts\map_load.js" />
+    <Content Include="app\static\app\scripts\move-top.js" />
+    <Content Include="app\static\app\scripts\regional_agegroup_data.js" />
+    <Content Include="app\static\app\scripts\regional_data.js" />
+    <Content Include="app\static\app\scripts\regional_ethnicity_data.js" />
+    <Content Include="app\static\app\scripts\regional_nationality_data.js" />
+    <Content Include="app\static\app\scripts\regional_religious_affiliation_data.js" />
+    <Content Include="app\static\app\scripts\side_controls.js" />
+    <Content Include="app\static\app\scripts\SmoothScroll.min.js" />
+    <Content Include="app\static\app\scripts\TableCheckboxDisplay.js" />
+    <Content Include="app\static\app\scripts\TableCheckboxDistrictAgegroup.js" />
+    <Content Include="app\static\app\scripts\TableCheckboxRegional.js" />
+    <Content Include="app\static\app\scripts\TableCheckboxRegionalAgegroup.js" />
+    <Content Include="app\static\app\scripts\TableCheckboxRegionalEthnicity.js" />
+    <Content Include="app\static\app\scripts\TableCheckboxRegionalNationality.js" />
+    <Content Include="app\static\app\scripts\TableCheckboxRegionalReligiousAfilliation.js" />
+    <Content Include="app\templates\app\gallery.html" />
+    <Content Include="app\templates\app\dowloadcenter.html" />
+    <Content Include="app\templates\app\geoweb.html" />
+    <Content Include="app\templates\app\icons.html" />
+    <Content Include="app\templates\app\mail.html" />
+    <Content Include="app\templates\app\single.html" />
+    <Content Include="app\templates\app\typography.html" />
+    <Content Include="app\templates\app\w3layouts-License.txt" />
+    <Content Include="requirements.txt" />
+    <Content Include="db.sqlite3" />
+    <Content Include="app\static\app\content\bootstrap.css" />
+    <Content Include="app\static\app\content\bootstrap.min.css" />
+    <Content Include="app\static\app\content\site.css" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="app\static\app\scripts\bootstrap.js" />
+    <Content Include="app\static\app\scripts\bootstrap.min.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.map" />
+    <Content Include="app\static\app\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.min.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="app\static\app\scripts\modernizr-2.6.2.js" />
+    <Content Include="app\static\app\scripts\respond.js" />
+    <Content Include="app\static\app\scripts\respond.min.js" />
+    <Content Include="app\static\app\scripts\_references.js" />
+    <Content Include="app\templates\app\about.html" />
+    <Content Include="app\templates\app\contact.html" />
+    <Content Include="app\templates\app\index.html" />
+    <Content Include="app\templates\app\layout.html" />
+    <Content Include="app\templates\app\login.html" />
+    <Content Include="app\templates\app\loginpartial.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.html">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env2\">
+      <Id>env2</Id>
+      <Version>3.6</Version>
+      <Description>env2 (Python 3.6 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
